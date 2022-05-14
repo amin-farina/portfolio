@@ -10,3 +10,7 @@ h5 {
 .menuOpciones{
   z-index: 99;
 }
+
+.h-tot {
+  height: 100vh;
+}

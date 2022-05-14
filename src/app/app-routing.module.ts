@@ -5,6 +5,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { WorksComponent } from './components/works/works.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { VacsComponent } from './components/vacs/vacs.component';
 
 const appRoutes:Routes = [
   {path: '', component: HeroComponent},
@@ -13,6 +14,7 @@ const appRoutes:Routes = [
   {path: 'experiencie', component: ExperienceComponent},
   {path: 'works', component: WorksComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'vacs', component: VacsComponent},
   {path: '**', component: HeroComponent}
 ]
 
