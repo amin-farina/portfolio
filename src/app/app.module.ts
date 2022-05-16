@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { WorksComponent } from './components/works/works.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { VacsComponent } from './components/vacs/vacs.component';
+import { AddVacComponent } from './components/add-vac/add-vac.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { VacsComponent } from './components/vacs/vacs.component';
     WorksComponent,
     ContactComponent,
     FooterComponent,
-    VacsComponent
+    VacsComponent,
+    AddVacComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

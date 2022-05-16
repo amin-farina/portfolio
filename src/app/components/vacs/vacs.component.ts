@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Cuentas} from "../../Cuentas";
 import {CUENTAS} from "../../mock-cuentas";
+import {CuentasService} from "../../service/cuentas.service"
 
 
 @Component({
@@ -15,7 +16,6 @@ export class VacsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
   }
 
 }
