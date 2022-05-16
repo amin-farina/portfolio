@@ -15,7 +15,7 @@ const appRoutes:Routes = [
   {path: 'works', component: WorksComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'vacs', component: VacsComponent},
-  {path: '**', component: HeroComponent}
+  {path: '**', pathMatch: 'full', component: HeroComponent}
 ]
 
 @NgModule({
