@@ -14,6 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { VacsComponent } from './components/vacs/vacs.component';
 import { AddVacComponent } from './components/add-vac/add-vac.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AddVacComponent } from './components/add-vac/add-vac.component';
     FooterComponent,
     VacsComponent,
     AddVacComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
