@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
+import { BehaviorSubject, Observable } from 'rxjs'
 import { User } from 'src/app/user';
-import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -9,11 +10,16 @@ import { Observable } from 'rxjs';
 export class LoginuserService {
 
   private baseUrl = 'http://localhost:8080/user/login'; //Esto es la API
-
-  constructor(private httpClient: HttpClient) { }
+  currentUserSubject: BehaviorSubject<any>;
+  constructor(private httpClient: HttpClient) {
+    this.currentUserSubject = new BehaviorSubject<object>(JSON.parse(sessionStorage.getItem('currentUser')|| '{}'));
+  }
 
   loginUser(user: User):Observable<object> {
     console.log(user);
-    return this.httpClient.post(`${this.baseUrl}`, user);
+    return this.httpClient.post(`${this.baseUrl}`, user).pipe(map(data=>{
+      sessionStorage.setItem('currentUser', JSON.stringify(data));
+      return data;
+    }));
   }
 }

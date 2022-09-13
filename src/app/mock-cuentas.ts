@@ -23,13 +23,5 @@ export const CUENTAS:Cuentas[]= [
     fecha: "20/01/97",
     dias: 0,
     hora: "23:00",
-  },
-  {
-    id: 4,
-    nombre: "Pablo",
-    vac: false,
-    fecha: "20/01/97",
-    dias: 0,
-    hora: "23:00",
   }
 ]
