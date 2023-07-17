@@ -21,9 +21,13 @@ export default function Home() {
               </p>
             </div>
 
-            <button className="bg-white w-1/2 my-6 justify-center text-black py-2 hover:bg-black hover:text-white hover:border-white border font-bold rounded-lg">
+            <a
+              href="/assets/files/CV - Sebastian Amin Fariña .pdf"
+              download
+              className="bg-white w-1/2 my-6 justify-center text-black py-2 hover:bg-black hover:text-white hover:border-white border font-bold rounded-lg"
+            >
               Download CV
-            </button>
+            </a>
           </div>
           <div className="flex flex-col justify-center items-center w-1/2 min-h-[80vh] ">
             <Image
