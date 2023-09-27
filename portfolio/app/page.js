@@ -24,7 +24,7 @@ export default function Home() {
             <a
               href="/assets/files/CV - Sebastian Amin Fariña .pdf"
               download
-              className="bg-white w-1/2 my-6 justify-center text-black py-2 hover:bg-black hover:text-white hover:border-white border font-bold rounded-lg"
+              className="bg-white w-1/2 my-6 flex justify-center text center text-black py-2 hover:bg-black hover:text-white hover:border-white border font-bold rounded-lg"
             >
               Download CV
             </a>
