@@ -14,7 +14,7 @@ export function NavBar() {
     ]
 
     return (
-        <div className="w-[100vw] mx-auto container">
+        <div className="w-[100vw] mx-auto container pt-5">
             <nav className="flex py-4 justify-center text-xl">
                 <ul className="flex">
                     {links.map((element) => {

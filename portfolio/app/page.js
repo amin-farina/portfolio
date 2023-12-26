@@ -9,7 +9,8 @@ export default function Home() {
       <div className="container mx-auto">
         <div className="flex">
           <div className="flex flex-col justify-center w-1/2 min-h-[80vh] space-y-4">
-            <span>Sebastián Amin, Fariña</span>
+            <p className="italic text-xl">Hi! i am</p>
+            <h1 className="titleFont text-6xl">Sebastián Amin, Fariña</h1>
             <div className="italic">
               <p>
                 I am Full Stack Developer, I have experience using modern
@@ -34,7 +35,7 @@ export default function Home() {
               src="/assets/img/personalPics/fotor-ai-1-removebg.png"
               width={500}
               height={500}
-              className="rounded-2xl"
+              className="rounded-2xl img-headPage"
             />
           </div>
         </div>

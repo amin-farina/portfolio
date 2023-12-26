@@ -62,7 +62,7 @@ export function IconsTechnologies() {
         },
         {
             name: 'vite',
-            imageSrc: '/assets/img/technologies/vitejs.svg',
+            imageSrc: '/assets/img/technologies/Vitejs.svg',
             imageAlt: 'Vite',
         }
     ]
