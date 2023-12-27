@@ -2,6 +2,7 @@ import { TypingEffectComponent } from "@/components/tools/TypingEffect";
 import Image from "next/image";
 import { IconsTechnologies } from "@/components/tools/IconsTechnologies";
 import "../public/assets/css/TypingEffect.css";
+import { IconsSocial } from "@/components/tools/IconsSocials";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
                 contribute to innovative projects.
               </p>
             </div>
-
+            <IconsSocial />
             <a
               href="/assets/files/CV - Sebastian Amin Fariña .pdf"
               download

@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
+import "../public/assets/css/navbar.css"
 
 
 export function NavBar() {
@@ -15,13 +16,13 @@ export function NavBar() {
 
     return (
         <div className="w-[100vw] mx-auto container pt-5">
-            <nav className="flex py-4 justify-center text-xl">
+            <nav className="flex py-4 justify-center text-xl navbarStyle">
                 <ul className="flex">
                     {links.map((element) => {
                         const isActive = pathname === (element.href);
                         return (
-                            <li key={element.name}>
-                                <Link href={element.href} className={`${isActive ? 'text-black bg-white' : ''} p-4 font-bold rounded`}>
+                            <li key={element.name} className={`${isActive ? 'active' : ''}`}>
+                                <Link href={element.href} className={`${isActive ? 'active' : ''} p-4 font-bold rounded`}>
                                     {element.name}
                                 </Link>
                             </li>

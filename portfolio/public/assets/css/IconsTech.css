@@ -1,0 +1,4 @@
+
+.hover-group:hover .postgresqlImg{
+    filter: invert(34%) sepia(52%) saturate(2441%) hue-rotate(6deg) brightness(93%) contrast(91%);
+}
