@@ -191,10 +191,10 @@ export function IconsTechnologies() {
     ]
 
     return (
-        <div className='flex flex-wrap mt-2 space-x-6 items-center justify-center group-hover:opacity-75'>
+        <div className='flex flex-wrap mt-2 min-sm:space-x-6 items-center justify-center group-hover:opacity-75'>
             {technologies.map((element, index) => (
                 <div key={index} className='space-y-1 h-auto mb-2 pb-2 border-b-2 border-transparent hover:border-b-2 hover:border-slate-400 group rounded-lg'>
-                    <div className='flex justify-center items-start w-full h-auto'>
+                    <div className='flex justify-center items-start min-sm:w-full h-auto'>
                         <p className='text-slate-600 mb-1 group-hover:text-slate-300'>{element.title}</p>
                     </div>
                     <div className='flex space-x-4 items-center h-[35px] px-3'>

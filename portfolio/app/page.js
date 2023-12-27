@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
       <div className="container mx-auto">
-        <div className="flex">
-          <div className="flex flex-col justify-center w-1/2 min-h-[80vh] space-y-4">
+        <div className="flex max-sm:flex-wrap max-sm:mb-3">
+          <div className="flex flex-col justify-center w-1/2 max-sm:w-full min-sm:min-h-[80vh] space-y-4">
             <p className="italic text-xl">Hi! i am</p>
             <h1 className="titleFont text-6xl">Sebastián Amin, Fariña</h1>
             <div className="italic">
@@ -31,7 +31,7 @@ export default function Home() {
               Download CV
             </a>
           </div>
-          <div className="flex flex-col justify-center items-center w-1/2 min-h-[80vh] ">
+          <div className="flex flex-col justify-center items-center w-1/2  max-sm:w-full min-sm:min-h-[80vh] ">
             <Image
               src="/assets/img/personalPics/fotor-ai-1-removebg.png"
               width={500}
